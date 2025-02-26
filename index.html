@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasina X Quader 🔫 Dr. Yunus</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <audio id="introAudio" src="audio1.m4a"></audio>
+    <audio id="loopAudio" src="audio2.m4a" loop></audio>
+  
+    <script>
+      const introAudio = document.getElementById('introAudio');
+      const loopAudio = document.getElementById('loopAudio');
+  
+      // Play the intro audio first
+      introAudio.play();
+  
+      // When the intro ends, play the loop audio
+      introAudio.addEventListener('ended', () => {
+        loopAudio.play();
+      });
+    </script>
+    <canvas></canvas>
+</body>
+</html>
